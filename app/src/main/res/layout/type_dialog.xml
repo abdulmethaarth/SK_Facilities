@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/arrived_homeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/camera_dialog_border"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/height_30">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/heading_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_20"
+                android:text="Outstation Type"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_15"
+                android:textColor="@color/black"/>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/font_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rlout_ride_type"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:scrollbars="none"
+                app:layoutManager="android.support.v7.widget.GridLayoutManager"/>
+
+        </LinearLayout>
+
+        <Button
+            android:background="@drawable/rounded_rect_black"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/close"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/height_30"
+            android:layout_marginRight="@dimen/height_30"
+            android:layout_margin="@dimen/margin_10"
+            android:text="CLOSE"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

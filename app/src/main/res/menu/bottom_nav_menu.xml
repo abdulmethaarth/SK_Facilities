@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/btm_book_driver"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_sk_black"
+        android:icon="@drawable/btm_sk_faci"
+        android:title="@string/title_sk_facilities" />
+
+    <item
+        android:id="@+id/navigation_my_booking"
+        android:icon="@drawable/btm_my_booking"
+        android:title="@string/title_my_booking" />
+
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/btm_more_iocn"
+        android:title="@string/title_more" />
+
+</menu>

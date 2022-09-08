@@ -1,0 +1,137 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_corner"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SK FACILITIES"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@drawable/toolbar_dropshadow"
+        android:layout_below="@id/layout_header"
+        android:layout_height="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/height_30"
+            android:layout_marginRight="@dimen/height_30"
+           android:layout_marginTop="@dimen/height_30"
+            android:layout_marginBottom="@dimen/font_20">
+
+            <ImageView
+                android:layout_width="@dimen/height_120"
+                android:layout_height="@dimen/height_120"
+                android:src="@drawable/splash_logo"
+                android:layout_gravity="center_horizontal"/>
+
+
+
+                    <EditText
+                        android:layout_marginTop="@dimen/height_30"
+                        android:drawablePadding="@dimen/font_10"
+                        android:id="@+id/edit_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/round_corner"
+                        android:hint="Name"
+                        android:drawableLeft="@drawable/user_yellow_icon"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/black"
+                        android:imeOptions="actionNext"
+                        android:textSize="@dimen/font_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/border_color"
+                android:layout_below="@id/layout_header"
+                android:layout_height="1dp"/>
+
+
+                <EditText
+                    android:layout_marginTop="@dimen/font_20"
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_corner"
+                    android:hint="@string/email"
+                    android:drawableLeft="@drawable/email_yellow_icon"
+                    android:drawablePadding="@dimen/font_10"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/font_16"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/border_color"
+                android:layout_below="@id/layout_header"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/edit_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/round_corner"
+                android:hint="@string/mobile"
+                android:layout_marginTop="@dimen/font_20"
+                android:drawableLeft="@drawable/mobile_yellow_icon"
+                android:drawablePadding="@dimen/font_10"
+                android:inputType="number"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:imeOptions="actionNext"
+                android:textSize="@dimen/font_16"/>
+
+            <View
+                android:layout_marginBottom="@dimen/font_10"
+                android:layout_width="match_parent"
+                android:background="@color/border_color"
+                android:layout_below="@id/layout_header"
+                android:layout_height="1dp"/>
+
+
+        </LinearLayout>
+
+    <Button
+        android:background="@drawable/rounded_border_yellow"
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_15"
+        android:text="@string/sign_up"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/height_40"
+        android:layout_marginRight="@dimen/height_40"
+        android:layout_marginTop="@dimen/font_20"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
+</RelativeLayout>

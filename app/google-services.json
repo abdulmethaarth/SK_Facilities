@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "221040093928",
+    "firebase_url": "https://sk-facilities-27c78.firebaseio.com",
+    "project_id": "sk-facilities-27c78",
+    "storage_bucket": "sk-facilities-27c78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221040093928:android:4370a1540a648b1571375d",
+        "android_client_info": {
+          "package_name": "com.affinity.sk_facilities"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221040093928-gck6s4bv387jf2pgojk229e0lhisamh5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.affinity.sk_facilities",
+            "certificate_hash": "c2de11655b142f80c15055a842a8c6ee90b3880d"
+          }
+        },
+        {
+          "client_id": "221040093928-brg6nj64s0tvqqio1dofq2chq69bj3so.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfqcQ17vMdKyEFHIyZj-W1VzjMG-oqicc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221040093928-brg6nj64s0tvqqio1dofq2chq69bj3so.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

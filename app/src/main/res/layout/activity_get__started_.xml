@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Get_Started_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="@dimen/height_100"
+            android:layout_height="@dimen/height_80"
+            android:layout_marginTop="@dimen/height_30"
+            android:layout_marginLeft="@dimen/font_20"
+            android:layout_marginRight="@dimen/font_20"
+            android:src="@drawable/splash_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:text="Welcome"
+            android:layout_marginTop="@dimen/font_10"
+            android:layout_marginLeft="@dimen/font_20"
+            android:layout_marginRight="@dimen/font_20"
+            android:textSize="@dimen/height_30"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/rate_car_des"
+            android:layout_marginTop="@dimen/font_10"
+            android:layout_marginLeft="@dimen/font_20"
+            android:layout_marginRight="@dimen/font_20"
+            android:layout_marginBottom="@dimen/height_30"
+            android:textSize="@dimen/font_20"
+            android:text="@string/welcom_content"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_getstart"
+        android:layout_below="@+id/header"
+        android:src="@drawable/screen_logo"/>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_getstart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/height_20"
+        android:layout_marginLeft="@dimen/font_20"
+        android:layout_marginRight="@dimen/font_20"
+        android:layout_marginBottom="@dimen/height_30"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_border">
+
+        <TextView
+            android:id="@+id/txt_getstart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/get_start"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_16" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

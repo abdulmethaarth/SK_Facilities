@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.affinity.sk_facilities.activity.Refer_and_Earn">
+
+        <LinearLayout
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/layout_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/layout_back_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/margin_15"
+                    android:paddingLeft="@dimen/margin_15">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/navigation_arrow"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_track_truck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REFER &amp; EARN"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/font_20"
+                    android:textColor="@color/black"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/margin_15"
+                    android:paddingLeft="@dimen/margin_15"
+                    android:layout_alignParentRight="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="T&amp;C"
+                        android:textStyle="bold"
+                        android:textColor="@color/green"
+                        android:textSize="12dp"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@drawable/toolbar_dropshadow"
+                android:layout_below="@id/layout_header"
+                android:layout_height="4dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/refer_and_earn_img"/>
+
+        </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_refer_code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_margin="@dimen/font_20">
+    <LinearLayout
+        android:id="@+id/li_refer_code_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_14"
+            android:text="Your referral code"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FIRST234"
+            android:textColor="@color/md_material_blue_800"
+            android:textSize="@dimen/font_20"/>
+
+    </LinearLayout>
+
+    <TextView
+       android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_outline_file_copy_24"
+        android:text="(Copy)"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@+id/rl_refer_code_layout"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/font_10"
+        android:layout_height="wrap_content"
+        android:text="@string/refer_and_earn"/>
+
+
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_margin="@dimen/font_20"
+        android:background="@drawable/to_rounded_border">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHARE CODE"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

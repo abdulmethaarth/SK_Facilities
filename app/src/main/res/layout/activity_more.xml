@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MORE"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_20"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/height_50"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MY S. K. FACILITIES"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_16"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/profile"
+                    android:layout_marginTop="@dimen/font_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40"
+                    android:gravity="center_vertical"
+                    android:text="Profile"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#959393"
+                    android:layout_height="0.5dp"/>
+
+                <TextView
+                    android:id="@+id/payments"
+                    android:layout_marginTop="@dimen/font_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40"
+                    android:gravity="center_vertical"
+                    android:text="Payments"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#959393"
+                    android:layout_height="0.5dp"/>
+
+                <TextView
+                    android:id="@+id/offers"
+                    android:layout_marginTop="@dimen/font_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40"
+                    android:gravity="center_vertical"
+                    android:text="Offers"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#959393"
+                    android:layout_height="0.5dp"/>
+
+                <TextView
+                    android:id="@+id/refer_and_earn"
+                    android:layout_marginTop="@dimen/font_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40"
+                    android:gravity="center_vertical"
+                    android:text="Referal"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#959393"
+                    android:layout_height="0.5dp"/>
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/font_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40"
+                    android:gravity="center_vertical"
+                    android:text="KNOW MORE"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_16"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/fare_chart"
+                    android:layout_marginTop="@dimen/font_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40"
+                    android:gravity="center_vertical"
+                    android:text="Fare Chart"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#959393"
+                    android:layout_height="0.5dp"/>
+
+                <TextView
+                    android:id="@+id/about_us"
+                    android:layout_marginTop="@dimen/font_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40"
+                    android:gravity="center_vertical"
+                    android:text="About Us"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#959393"
+                    android:layout_height="0.5dp"/>
+
+
+                <TextView
+
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GET IN TOUCH"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_16"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/contact_us"
+                    android:layout_marginTop="@dimen/font_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40"
+                    android:gravity="center_vertical"
+                    android:text="Countact us"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#959393"
+                    android:layout_height="0.5dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="@drawable/selector"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu"/>
+</RelativeLayout>
